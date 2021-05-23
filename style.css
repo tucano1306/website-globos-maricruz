@@ -1,0 +1,363 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        font-family: 'Bree Serif', serif;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        display: none;
+    }
+    
+    nav ul a {
+        display: block;
+        background: #0d1317;
+        padding: 20px;
+        font-size: 17px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: red;
+        transition: color 1s ease, background 1s ease, padding 1s ease;
+    }
+    
+    nav ul a:hover {
+        background: #474747;
+        color: #e0e0e0;
+        padding-left: 30px;
+    }
+    
+    .nav-container img {
+        width: 100px;
+        align-self: center;
+    }
+    
+    .nav-container {
+        padding: 0 20px;
+        background: #474747;
+        border-bottom: 3px solid red;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .bar {
+        width: 30px;
+        height: 3px;
+        margin: 7px;
+        background: red;
+    }
+    
+    .btn {
+        padding: 2px;
+        display: inline-block;
+        border: 2px solid red;
+        align-self: center;
+    }
+    
+    header {
+        min-height: 100vh;
+        width: 100%;
+        background: linear-gradient(rgba(234, 234, 242, 0.5), rgba(220, 220, 232, 0.5)), url(img/ankush-minda-4Xy08NbMBLM-unsplash.jpg)center/cover fixed no-repeat;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    nav {
+        flex: 0 0 auto;
+    }
+    
+    .banner {
+        flex: 1 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .banner h1 {
+        font-size: 50px;
+        text-transform: uppercase;
+        color: blue;
+    }
+    
+    .banner h3 {
+        text-transform: capitalize;
+        font-size: 30px;
+        color: rgb(255, 0, 98);
+    }
+    
+    .and {
+        color: rgb(53, 3, 47);
+    }
+    
+    .banner-icons {
+        padding: 25px;
+    }
+    
+    .banner-icons a {
+        display: inline-block;
+        font-size: 30px;
+        background: blue;
+        padding: 5px 10px;
+        margin: 0 10px;
+        border-radius: 50%;
+        color: white;
+        transition: color 0.5 ease, transform 0.5s ease;
+    }
+    
+    .banner-icons a:hover {
+        color: white;
+        transform: translateY(-10px);
+    }
+    
+    nav {
+        position: fixed;
+        width: 100%;
+        z-index: 10;
+    }
+    
+    @media screen and ( min-width:776px) {
+        .nav-container {
+            display: none;
+        }
+        nav ul {
+            display: flex! important;
+            flex-wrap: wrap;
+            justify-content: center;
+            background: rgba(black 0.7);
+        }
+        nav ul a:hover {
+            background: transparent;
+            padding-left: 20px;
+        }
+    }
+    
+    .services {
+        min-height: 80vh;
+        background: linear-gradient(rgba(234, 234, 242, 0.5), rgba(220, 220, 232, 0.5)), url(img/peter-boccia-RCs-VtyUVd8-unsplash\ \(1\).jpg) center/cover fixed no-repeat;
+        display: flex;
+        align-items: center;
+    }
+    
+    .service {
+        color: rgb(107, 22, 22);
+        display: flex;
+        margin: 40px;
+    }
+    
+    .service-icon {
+        align-self: center;
+        font-size: 60px;
+        margin-right: 20px;
+        padding: 20px;
+        border: 3px solid rgb(107, 22, 22);
+        border-radius: 50%;
+    }
+    
+    .service-text h3 {
+        text-transform: uppercase;
+    }
+    
+    .service-text p {
+        line-height: 2;
+        margin-top: 5px;
+    }
+    
+    @media screen and ( min-width576px) {
+        .services-center {
+            width: 70%;
+        }
+    }
+    
+    @media screen and ( min-width776px) {
+        .services-center {
+            width: 50%;
+        }
+        .service-text p {
+            width: 50%;
+        }
+    }
+    
+    .projects {
+        padding: 0 0 100px 0;
+        background: #e0e0e0;
+    }
+    
+    .title h2 {
+        font-size: 40px;
+        text-align: center;
+        text-transform: uppercase;
+        color: rgb(255, 0, 98);
+    }
+    
+    .title-underline {
+        background: rgb(255, 0, 98);
+        width: 100px;
+        height: 4px;
+        margin: 10px auto;
+    }
+    
+    .title {
+        padding: 50px 0;
+    }
+    
+    .project {
+        background: linear-gradient(rgb(74, 74, 79), rgb(46, 46, 48));
+        overflow: hidden;
+    }
+    
+    .projects img {
+        width: 99%;
+        display: block;
+        transition: opacity 2s ease, transform 2s ease;
+    }
+    
+    .projects img:hover {
+        opacity: 0.5;
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+    
+    @media screen and ( min-width:576px) {
+        .projects-center {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    
+    @media screen and ( min-width:992px) {
+        .projects-center {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+    
+    .about {
+        min-height: 100vh;
+        padding: 100px 0;
+        background: url(img/adi-goldstein-FU5uVjZSMMw-unsplash.jpg)center/cover fixed no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .about-card {
+        background: rgba(255, 255, 255, 0.6);
+        text-align: center;
+        padding: 60px 40px;
+    }
+    
+    .about-card h3 {
+        font-size: 40px;
+        text-transform: capitalize;
+        color: #060937;
+    }
+    
+    .about-card .fa-kiss-wink-heart {
+        font-size: 60px;
+        color: crimson;
+        margin: 20px 0;
+    }
+    
+    .about-card p {
+        line-height: 2;
+        color: #060937;
+    }
+    
+    @media screen and ( min-width:776px) {
+        .about-card {
+            max-width: 50%;
+            border-radius: 30px;
+        }
+        .about-card p {
+            max-width: 70%;
+            margin: 0 auto;
+        }
+    }
+    
+    .filler {
+        min-height: 110vh;
+        background: url(img/pexels-craig-adderley-1543762.jpg)center/cover fixed no-repeat;
+    }
+    
+    .contact {
+        min-height: 80vh;
+        background: url(img/adi-goldstein-FU5uVjZSMMw-unsplash.jpg)center/cover fixed no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .contact-card {
+        flex: 0 80%;
+        padding: 40px 0;
+        background: rgba(0, 0, 0, 0.6);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    form {
+        flex: 0 0 60%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    form input {
+        margin: 10px 0;
+    }
+    
+    form h3 {
+        text-align: center;
+        text-transform: uppercase;
+        color: red;
+    }
+    
+    form input,
+    form textarea {
+        padding: 5px;
+        border: 3px solid red;
+    }
+    
+    input ::placeholder,
+    textarea ::placeholder {
+        text-transform: uppercase;
+        color: red;
+    }
+    
+    .form-btn {
+        margin: 20px;
+        font-size: 20px;
+        border-radius: 40px;
+        padding: 5px;
+        background: #8b8bb3;
+        color: #800707;
+        transition: color 1 ease-in-out, background 1s ease-in-out;
+    }
+    
+    .form-btn:hover {
+        color: aqua;
+        background: #800707;
+    }
+    
+    footer {
+        background: #0d1317;
+        padding: 60px 0;
+        text-align: center;
+    }
+    
+    .footer-icons a {
+        display: inline-block;
+        font-size: 30px;
+        margin: 0 10px 20px 10px;
+        padding: 2px 5px;
+        border-radius: 5px;
+        background: white;
+        color: #0d1317;
+    }
+    
+    footer p {
+        color: white;
+        font-size: 20px;
+    }
